@@ -4,4 +4,4 @@ node_js:
 - node
 - 'lts/*'
 
-include: npm run lint
+script: npm run lint
