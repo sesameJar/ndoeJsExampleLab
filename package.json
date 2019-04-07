@@ -10,13 +10,18 @@
     "url": "git://github.com/travis-ci/travis-ci-node.js-example.git"
   },
   "scripts": {
-    "test": "vows test/*.js"
+    "test": "vows test/*.js",
+    "lint": "eslint --ext .js ./"
   },
   "engines": {
     "node": ">= 0.4"
   },
-  "dependencies": {},
+  "dependencies": {
+    "eslint-plugin-promise": "^4.1.1"
+  },
   "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-strongloop": "^2.1.0",
     "vows": "latest"
   }
 }
